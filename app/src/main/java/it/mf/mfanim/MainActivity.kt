@@ -1,11 +1,12 @@
 package it.mf.mfanim
 
 import android.content.Context
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.text.Html
+import android.util.Log
 import android.view.View
 import android.widget.TextView
+import androidx.appcompat.app.AppCompatActivity
 import androidx.viewpager2.widget.ViewPager2
 import it.mf.mfanim.adapter.SliderAdapter
 import it.mf.mfanim.databinding.ActivityMainBinding
@@ -15,12 +16,13 @@ class MainActivity : AppCompatActivity() {
         private const val SHPREFS = "it.mf.mfanim_rand409371243124_shpref"
         private const val INTROED_KEY = "introed"
         private val INTRO_LAYOUTS = intArrayOf(
-            R.layout.intro_first_hello,
-            R.layout.intro_second_anim_shown,
-            R.layout.intro_third_whoweare)
+                R.layout.intro_first_hello,
+                R.layout.intro_second_anim_shown,
+                R.layout.intro_third_whoweare)
     }
 
     private lateinit var binding : ActivityMainBinding
+    private var alreadyAddedDots = false
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -36,18 +38,24 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun init() {
+        makeDots(0)
+        supportActionBar?.hide()
         binding.pager.adapter = SliderAdapter(INTRO_LAYOUTS)
         binding.pager.registerOnPageChangeCallback(pageChangeCallback)
         binding.btnNext.setOnClickListener { introCurrent(true) }
         binding.btnPrev.setOnClickListener { introCurrent(false) }
-        makeDots(0)
     }
 
     private var pageChangeCallback:
             ViewPager2.OnPageChangeCallback = object : ViewPager2.OnPageChangeCallback() {
         override fun onPageSelected(position: Int) {
             super.onPageSelected(position)
-            makeDots(position)
+
+            if(alreadyAddedDots)
+                makeDots(position)
+            else
+                alreadyAddedDots = true
+
             if (position == INTRO_LAYOUTS.size - 1) {
                 binding.btnNext.text = getString(R.string.view_anims)
             } else {
@@ -57,8 +65,9 @@ class MainActivity : AppCompatActivity() {
         }
     }
 
-    private fun introCurrent(goNext : Boolean) {
+    private fun introCurrent(goNext: Boolean) {
         val current = binding.pager.currentItem + if (goNext) 1 else -1
+
         if (current < INTRO_LAYOUTS.size) {
             binding.pager.currentItem = current
         } else {
@@ -70,13 +79,14 @@ class MainActivity : AppCompatActivity() {
         }
     }
 
-    private fun makeDots(cur : Int) {
+    private fun makeDots(cur: Int) {
         val dots : Array<TextView?> = arrayOfNulls(INTRO_LAYOUTS.size)
 
         val colorsActive = resources.getIntArray(R.array.array_dot_active)
         val colorsInactive = resources.getIntArray(R.array.array_dot_inactive)
 
         binding.layoutDots.removeAllViews()
+
         for (i in dots.indices) {
             dots[i] = TextView(this)
             dots[i]!!.text = Html.fromHtml("&#8226;", 0)
@@ -84,6 +94,9 @@ class MainActivity : AppCompatActivity() {
             dots[i]!!.setTextColor(colorsInactive[cur])
             binding.layoutDots.addView(dots[i])
         }
-        if (dots.isNotEmpty()) dots[cur]!!.setTextColor(colorsActive[cur])
+
+        if (dots.isNotEmpty()) {
+            dots[cur]!!.setTextColor(colorsActive[cur])
+        }
     }
 }

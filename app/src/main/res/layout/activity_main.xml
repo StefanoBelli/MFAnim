@@ -32,7 +32,7 @@
     <LinearLayout
         android:id="@+id/layout_dots"
         android:layout_width="match_parent"
-        android:layout_height="@dimen/dots_height"
+        android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
         android:layout_marginBottom="48dp"
         android:gravity="center"
