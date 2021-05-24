@@ -1,4 +1,4 @@
-package it.mf.mfanim
+package it.mobileflow.mfanim
 
 import org.junit.Test
 

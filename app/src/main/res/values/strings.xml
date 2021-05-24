@@ -3,4 +3,8 @@
     <string name="next">Next</string>
     <string name="prev">Previous</string>
     <string name="view_anims">View animations</string>
+    <string name="first_anim_name">First</string>
+    <string name="second_anim_name">Second</string>
+    <string name="third_anim_name">Third</string>
+    <string name="fourth_anim_name">Fourth</string>
 </resources>

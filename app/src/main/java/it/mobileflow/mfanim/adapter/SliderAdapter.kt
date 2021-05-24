@@ -1,4 +1,4 @@
-package it.mf.mfanim.adapter
+package it.mobileflow.mfanim.adapter
 
 import android.view.LayoutInflater
 import android.view.View

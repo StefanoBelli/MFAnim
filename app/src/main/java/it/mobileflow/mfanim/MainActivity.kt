@@ -1,14 +1,15 @@
-package it.mf.mfanim
+package it.mobileflow.mfanim
 
 import android.content.Context
+import android.content.Intent
 import android.os.Bundle
 import android.text.Html
 import android.view.View
 import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
 import androidx.viewpager2.widget.ViewPager2
-import it.mf.mfanim.adapter.SliderAdapter
-import it.mf.mfanim.databinding.ActivityMainBinding
+import it.mobileflow.mfanim.adapter.SliderAdapter
+import it.mobileflow.mfanim.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {
     companion object {
@@ -28,7 +29,7 @@ class MainActivity : AppCompatActivity() {
 
         if(getSharedPreferences(SHPREFS, Context.MODE_PRIVATE)
                 .getBoolean(INTROED_KEY, false)) {
-            //start new activity
+            startAnimActivity()
         } else {
             binding = ActivityMainBinding.inflate(layoutInflater)
             setContentView(binding.root)
@@ -70,7 +71,7 @@ class MainActivity : AppCompatActivity() {
         if (current < INTRO_LAYOUTS.size) {
             binding.pager.currentItem = current
         } else {
-            //start new activity
+            startAnimActivity()
             getSharedPreferences(SHPREFS, Context.MODE_PRIVATE).edit().apply {
                 putBoolean(INTROED_KEY, true)
                 apply()
@@ -97,5 +98,10 @@ class MainActivity : AppCompatActivity() {
         if (dots.isNotEmpty()) {
             dots[cur]!!.setTextColor(colorsActive[cur])
         }
+    }
+
+    private fun startAnimActivity() {
+        startActivity(Intent(this,  AnimActivity::class.java))
+        finish()
     }
 }
