@@ -50,7 +50,6 @@ class FirstAnimFragment : Fragment() {
 
     inner class ButtonClickListener : View.OnClickListener {
         private var currentStep = 0
-        private var origY : Float = 0f
 
         override fun onClick(v: View?) {
             when(currentStep) {

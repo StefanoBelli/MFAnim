@@ -9,4 +9,12 @@
     <string name="fourth_anim_name">Fourth</string>
     <string name="click_me">Click me!</string>
     <string name="duration">Duration</string>
+    <string name="welcome">WELCOME TO</string>
+    <string name="demo_application">DEMONSTRATIVE APPLICATION</string>
+    <string name="animation">of animations</string>
+    <string name="stefano_belli">Stefano Belli</string>
+    <string name="elia_cinti">Elia Cinti</string>
+    <string name="robert_dudas">Robert Dudas</string>
+    <string name="simone_ottavianelli">Simone Ottavianelli</string>
+    <string name="member_mobile_flow">MOBILE FLOW PARTICIPANTS</string>
 </resources>

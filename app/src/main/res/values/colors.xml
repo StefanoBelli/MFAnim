@@ -9,14 +9,14 @@
     <color name="white">#FFFFFFFF</color>
 
     <!-- dots inactive colors -->
-    <color name="dot_dark_screen1">#d1395c</color>
-    <color name="dot_dark_screen2">#14a895</color>
-    <color name="dot_dark_screen3">#2278d4</color>
+    <color name="dot_dark_screen1">#d9cb04</color>
+    <color name="dot_dark_screen2">#04c3c9</color>
+    <color name="dot_dark_screen3">#02bd05</color>
 
     <!-- dots active colors -->
-    <color name="dot_light_screen1">#f98da5</color>
-    <color name="dot_light_screen2">#8cf9eb</color>
-    <color name="dot_light_screen3">#93c6fd</color>
+    <color name="dot_light_screen1">#fcec03</color>
+    <color name="dot_light_screen2">#00f7ff</color>
+    <color name="dot_light_screen3">#00ff04</color>
 
     <array name="array_dot_active">
         <item>@color/dot_light_screen1</item>

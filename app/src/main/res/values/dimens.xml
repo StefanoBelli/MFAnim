@@ -1,4 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <dimen name="bottom_pad_little">10dp</dimen>
+    <dimen name="vert_pad">32dp</dimen>
+    <dimen name="hor_pad">40dp</dimen>
+    <dimen name="top_pad">30dp</dimen>
 </resources>
