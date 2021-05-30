@@ -7,4 +7,6 @@
     <string name="second_anim_name">Second</string>
     <string name="third_anim_name">Third</string>
     <string name="fourth_anim_name">Fourth</string>
+    <string name="click_me">Click me!</string>
+    <string name="duration">Duration</string>
 </resources>
