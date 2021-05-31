@@ -3,7 +3,6 @@ package it.mobileflow.mfanim.fragment
 import android.animation.ObjectAnimator
 import android.annotation.SuppressLint
 import android.graphics.Path
-import android.graphics.RectF
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
