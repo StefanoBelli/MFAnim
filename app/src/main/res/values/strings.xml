@@ -17,4 +17,5 @@
     <string name="robert_dudas">Robert Dudas</string>
     <string name="simone_ottavianelli">Simone Ottavianelli</string>
     <string name="member_mobile_flow">MOBILE FLOW MEMBERS</string>
+    <string name="anim_view_pos_objanim">Animate a View using ObjectAnimator</string>
 </resources>

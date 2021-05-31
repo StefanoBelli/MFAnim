@@ -4,4 +4,6 @@
     <dimen name="vert_pad">32dp</dimen>
     <dimen name="hor_pad">40dp</dimen>
     <dimen name="top_pad">30dp</dimen>
+    <dimen name="desc_text_size">35sp</dimen>
+    <dimen name="left_right_pad">10dp</dimen>
 </resources>
