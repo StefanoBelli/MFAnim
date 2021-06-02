@@ -18,4 +18,19 @@ class SecondAnimFragment : Fragment() {
         binding = FragmentSecondAnimBinding.inflate(layoutInflater, container, false)
         return binding.root
     }
+
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        super.onViewCreated(view, savedInstanceState)
+        binding.androidLogoIv.setOnClickListener {
+            binding.androidLogoIv.animate().apply {
+                duration = 1000
+                rotationXBy(360f)
+            }.withEndAction {
+                binding.androidLogoIv.animate().apply {
+                    duration = 1000
+                    rotationYBy(3600f)
+                }
+            }
+        }
+    }
 }

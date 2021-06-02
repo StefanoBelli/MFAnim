@@ -18,4 +18,6 @@
     <string name="simone_ottavianelli">Simone Ottavianelli</string>
     <string name="member_mobile_flow">MOBILE FLOW MEMBERS</string>
     <string name="anim_view_pos_objanim">Animate a View using ObjectAnimator</string>
+    <string name="android_logo">Android logo</string>
+    <string name="anim_drawable">Animate a drawable</string>
 </resources>

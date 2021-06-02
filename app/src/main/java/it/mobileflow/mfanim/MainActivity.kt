@@ -10,7 +10,7 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.viewpager2.widget.ViewPager2
 import it.mobileflow.mfanim.adapter.SliderAdapter
 import it.mobileflow.mfanim.databinding.ActivityMainBinding
-import it.mobileflow.mfanim.transformer.SliderTransformer
+import it.mobileflow.mfanim.transformer.ZoomInPageTransformer
 
 class MainActivity : AppCompatActivity() {
     companion object {
@@ -43,7 +43,7 @@ class MainActivity : AppCompatActivity() {
         supportActionBar?.hide()
         binding.pager.adapter = SliderAdapter(INTRO_LAYOUTS)
         binding.pager.registerOnPageChangeCallback(pageChangeCallback)
-        binding.pager.setPageTransformer(SliderTransformer())
+        binding.pager.setPageTransformer(ZoomInPageTransformer())
         binding.btnNext.setOnClickListener { introCurrent(true) }
         binding.btnPrev.setOnClickListener { introCurrent(false) }
         window.statusBarColor = getColor(R.color.dot_dark_screen1)
