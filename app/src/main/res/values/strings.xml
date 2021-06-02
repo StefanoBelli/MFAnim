@@ -18,4 +18,13 @@
     <string name="simone_ottavianelli">Simone Ottavianelli</string>
     <string name="member_mobile_flow">MOBILE FLOW MEMBERS</string>
     <string name="anim_view_pos_objanim">Animate a View using ObjectAnimator</string>
+    <string name="slide_down">Slide Down</string>
+    <string name="slide_up">Slide Up</string>
+    <string name="bounce">Bounce</string>
+    <string name="rotate">Rotate</string>
+    <string name="zoom_out">Zoom Out</string>
+    <string name="zoom_in">Zoom In</string>
+    <string name="fade_out">Fade Out</string>
+    <string name="fade_in">Fade In</string>
+    <string name="test">Animate View Using Animation Resource</string>
 </resources>
