@@ -27,4 +27,6 @@
     <string name="fade_out">Fade Out</string>
     <string name="fade_in">Fade In</string>
     <string name="test">Animate View Using Animation Resource</string>
+    <string name="android_logo">Android logo</string>
+    <string name="anim_drawable">Animate a drawable</string>
 </resources>
