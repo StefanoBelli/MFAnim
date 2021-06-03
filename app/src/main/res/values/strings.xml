@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">MFAnim</string>
+    <string name="app_name" translatable="false">MFAnim</string>
     <string name="next">Next</string>
     <string name="prev">Previous</string>
     <string name="view_anims">View animations</string>
@@ -12,30 +12,31 @@
     <string name="welcome">WELCOME TO</string>
     <string name="demo_application">DEMONSTRATIVE APPLICATION</string>
     <string name="animation">of animations</string>
-    <string name="stefano_belli">Stefano Belli</string>
-    <string name="elia_cinti">Elia Cinti</string>
-    <string name="robert_dudas">Robert Dudas</string>
-    <string name="simone_ottavianelli">Simone Ottavianelli</string>
+    <string name="stefano_belli" translatable="false">Stefano Belli</string>
+    <string name="elia_cinti" translatable="false">Elia Cinti</string>
+    <string name="robert_dudas" translatable="false">Robert Dudas</string>
+    <string name="simone_ottavianelli" translatable="false">Simone Ottavianelli</string>
     <string name="member_mobile_flow">MOBILE FLOW MEMBERS</string>
     <string name="anim_view_pos_objanim">Animate a View using ObjectAnimator</string>
     <string name="anim_view_reveal">Reveal a View using an animation</string>
-    <string name="slide_down">Slide Down</string>
-    <string name="slide_up">Slide Up</string>
-    <string name="bounce">Bounce</string>
-    <string name="rotate">Rotate</string>
-    <string name="zoom_out">Zoom Out</string>
-    <string name="zoom_in">Zoom In</string>
-    <string name="fade_out">Fade Out</string>
-    <string name="fade_in">Fade In</string>
+    <string name="slide_down" translatable="false">Slide Down</string>
+    <string name="slide_up" translatable="false">Slide Up</string>
+    <string name="bounce" translatable="false">Bounce</string>
+    <string name="rotate" translatable="false">Rotate</string>
+    <string name="zoom_out" translatable="false">Zoom Out</string>
+    <string name="zoom_in" translatable="false">Zoom In</string>
+    <string name="fade_out" translatable="false">Fade Out</string>
+    <string name="fade_in" translatable="false">Fade In</string>
     <string name="anim_view_pos_resanim">Animate a View using animation resource</string>
-    <string name="android_logo">Android logo</string>
+    <string name="android_logo" translatable="false">Android logo</string>
     <string name="anim_drawable">Animate a Drawable</string>
     <string name="appinfo">About this app…</string>
-    <string name="ok">OK</string>
+    <string name="ok" translatable="false">OK</string>
     <string name="basic_info">This app was developed by Mobile Flow team</string>
     <string name="build_compiled">Build compiled on</string>
     <string name="build_type">Build type</string>
     <string name="project_src_link">Project source code at</string>
-    <string name="project_url">https://github.com/StefanoBelli/MFAnim</string>
-    <string name="lorem_ipsum">Lorem ipsum dolor sit amet</string>
+    <string name="project_url" translatable="false">https://github.com/StefanoBelli/MFAnim</string>
+    <string name="lorem_ipsum" translatable="false">Lorem ipsum dolor sit amet</string>
+    <string name="click_again_tosee_effect">Click again to see this effect!</string>
 </resources>

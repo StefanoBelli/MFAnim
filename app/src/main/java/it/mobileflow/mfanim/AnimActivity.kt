@@ -3,7 +3,6 @@ package it.mobileflow.mfanim
 import android.content.DialogInterface
 import android.graphics.drawable.ColorDrawable
 import android.os.Bundle
-import android.text.format.DateFormat
 import android.view.Menu
 import android.view.MenuItem
 import androidx.appcompat.app.AlertDialog
@@ -14,7 +13,8 @@ import it.mobileflow.mfanim.adapter.FragmentAdapter
 import it.mobileflow.mfanim.databinding.ActivityAnimBinding
 import it.mobileflow.mfanim.transformer.PopPageTransformer
 import java.text.SimpleDateFormat
-import java.util.*
+import java.util.Locale
+import java.util.Date
 
 class AnimActivity : AppCompatActivity() {
     companion object {
