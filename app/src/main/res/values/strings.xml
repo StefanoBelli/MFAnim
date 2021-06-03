@@ -26,7 +26,7 @@
     <string name="zoom_in">Zoom In</string>
     <string name="fade_out">Fade Out</string>
     <string name="fade_in">Fade In</string>
-    <string name="test">Animate View Using Animation Resource</string>
+    <string name="anim_view_pos_resanim">Animate a View using animation resource</string>
     <string name="android_logo">Android logo</string>
-    <string name="anim_drawable">Animate a drawable</string>
+    <string name="anim_drawable">Animate a Drawable</string>
 </resources>

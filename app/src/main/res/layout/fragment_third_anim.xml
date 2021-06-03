@@ -1,22 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
     <TextView
-        android:id="@+id/textView"
+        android:id="@+id/anim_view_pos_resanim_tv"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_above="@+id/btn_layout"
-        android:text="@string/test"
+        android:layout_above="@+id/btns_layout"
+        android:text="@string/anim_view_pos_resanim"
         android:gravity="center"
-        android:textSize="30sp"
-        android:textStyle="bold" />
+        android:textSize="@dimen/desc_text_size"
+        android:textColor="@color/desc_text_color" />
 
     <LinearLayout
-        android:id="@+id/btn_layout"
+        android:id="@+id/btns_layout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
@@ -29,20 +28,21 @@
             android:weightSum="2">
 
             <Button
-                android:id="@+id/fade_in"
+                android:id="@+id/fade_in_btn"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:text="@string/fade_in"
-                android:textAllCaps="false"
-                style="?android:attr/buttonBarButtonStyle" />
+                style="?android:attr/buttonBarButtonStyle"
+                android:textColor="@color/primary" />
             <Button
-                android:id="@+id/fade_out"
+                android:id="@+id/fade_out_btn"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:text="@string/fade_out"
-                android:textAllCaps="false"
-                android:layout_weight="1"/>
+                android:layout_weight="1"
+                style="?android:attr/buttonBarButtonStyle"
+                android:textColor="@color/primary" />
         </LinearLayout>
 
         <LinearLayout
@@ -51,20 +51,21 @@
             android:orientation="horizontal"
             android:weightSum="2">
             <Button
-                android:id="@+id/zoom_in"
+                android:id="@+id/zoom_in_btn"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:text="@string/zoom_in"
-                android:textAllCaps="false"
-                android:layout_weight="1"/>
+                android:layout_weight="1"
+                style="?android:attr/buttonBarButtonStyle"
+                android:textColor="@color/primary" />
             <Button
-                android:id="@+id/zoom_out"
+                android:id="@+id/zoom_out_btn"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:text="@string/zoom_out"
-                android:textAllCaps="false"
                 android:layout_weight="1"
-                style="?android:attr/buttonBarButtonStyle" />
+                style="?android:attr/buttonBarButtonStyle"
+                android:textColor="@color/primary" />
         </LinearLayout>
 
         <LinearLayout
@@ -73,20 +74,21 @@
             android:orientation="horizontal"
             android:weightSum="2">
             <Button
-                android:id="@+id/slide_down"
+                android:id="@+id/slide_down_btn"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:text="@string/slide_down"
-                android:textAllCaps="false"
                 android:layout_weight="1"
-                style="?android:attr/buttonBarButtonStyle" />
+                style="?android:attr/buttonBarButtonStyle"
+                android:textColor="@color/primary" />
             <Button
-                android:id="@+id/slide_up"
+                android:id="@+id/slide_up_btn"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:text="@string/slide_up"
-                android:textAllCaps="false"
-                android:layout_weight="1"/>
+                android:layout_weight="1"
+                style="?android:attr/buttonBarButtonStyle"
+                android:textColor="@color/primary" />
         </LinearLayout>
 
         <LinearLayout
@@ -95,22 +97,21 @@
             android:orientation="horizontal"
             android:weightSum="2">
             <Button
-                android:id="@+id/bounce"
+                android:id="@+id/bounce_btn"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:text="@string/bounce"
-                android:textAllCaps="false"
-                android:layout_weight="1"/>
+                android:layout_weight="1"
+                style="?android:attr/buttonBarButtonStyle"
+                android:textColor="@color/primary" />
             <Button
-                android:id="@+id/rotate"
+                android:id="@+id/rotate_btn"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:text="@string/rotate"
-                android:textAllCaps="false"
                 android:layout_weight="1"
-                style="?android:attr/buttonBarButtonStyle" />
+                style="?android:attr/buttonBarButtonStyle"
+                android:textColor="@color/primary" />
         </LinearLayout>
-
     </LinearLayout>
-
 </RelativeLayout>

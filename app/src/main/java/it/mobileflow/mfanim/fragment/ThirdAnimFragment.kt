@@ -12,57 +12,38 @@ import it.mobileflow.mfanim.databinding.FragmentThirdAnimBinding
 class ThirdAnimFragment : Fragment() {
     private lateinit var binding : FragmentThirdAnimBinding
 
-    override fun onCreateView(
-        inflater: LayoutInflater,
-        container: ViewGroup?,
-        savedInstanceState: Bundle?
-    ): View {
+    override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?,
+                              savedInstanceState: Bundle?): View {
         binding = FragmentThirdAnimBinding.inflate(layoutInflater, container, false)
         return binding.root
-        
-    }
-    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
-        super.onViewCreated(view, savedInstanceState)
-        binding.fadeIn.setOnClickListener {
-            binding.textView.visibility = View.VISIBLE
-            val animation = AnimationUtils.loadAnimation(context , R.anim.fade_in)
-            binding.textView.startAnimation(animation)
-        }
-        binding.fadeOut.setOnClickListener {
-            binding.textView.visibility = View.VISIBLE
-            val animation = AnimationUtils.loadAnimation(context , R.anim.fade_out)
-            binding.textView.startAnimation(animation)
-        }
-        binding.zoomIn.setOnClickListener {
-            binding.textView.visibility = View.VISIBLE
-            val animation = AnimationUtils.loadAnimation(context , R.anim.zoom_in)
-            binding.textView.startAnimation(animation)
-        }
-        binding.zoomOut.setOnClickListener {
-            binding.textView.visibility = View.VISIBLE
-            val animation = AnimationUtils.loadAnimation(context , R.anim.zoom_out)
-            binding.textView.startAnimation(animation)
-        }
-        binding.slideDown.setOnClickListener {
-            binding.textView.visibility = View.VISIBLE
-            val animation = AnimationUtils.loadAnimation(context , R.anim.slide_down)
-            binding.textView.startAnimation(animation)
-        }
-        binding.slideUp.setOnClickListener {
-            binding.textView.visibility = View.VISIBLE
-            val animation = AnimationUtils.loadAnimation(context , R.anim.slide_up)
-            binding.textView.startAnimation(animation)
-        }
-        binding.bounce.setOnClickListener {
-            binding.textView.visibility = View.VISIBLE
-            val animation = AnimationUtils.loadAnimation(context , R.anim.bounce)
-            binding.textView.startAnimation(animation)
-        }
-        binding.rotate.setOnClickListener {
-            binding.textView.visibility = View.VISIBLE
-            val animation = AnimationUtils.loadAnimation(context , R.anim.rotate)
-            binding.textView.startAnimation(animation)
-        }
     }
 
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        super.onViewCreated(view, savedInstanceState)
+
+        val listener = CommonOnClickListener()
+
+        binding.fadeInBtn.setOnClickListener(listener)
+        binding.fadeOutBtn.setOnClickListener(listener)
+        binding.zoomInBtn.setOnClickListener(listener)
+        binding.zoomOutBtn.setOnClickListener(listener)
+        binding.bounceBtn.setOnClickListener(listener)
+        binding.rotateBtn.setOnClickListener(listener)
+        binding.slideUpBtn.setOnClickListener(listener)
+        binding.slideDownBtn.setOnClickListener(listener)
+    }
+
+    inner class CommonOnClickListener : View.OnClickListener {
+        private val anim = mapOf(
+                binding.fadeInBtn to R.anim.fade_in, binding.fadeOutBtn to R.anim.fade_out,
+                binding.zoomInBtn to R.anim.zoom_in, binding.zoomOutBtn to R.anim.zoom_out,
+                binding.slideDownBtn to R.anim.slide_down, binding.slideUpBtn to R.anim.slide_up,
+                binding.rotateBtn to R.anim.rotate, binding.bounceBtn to R.anim.bounce)
+
+        override fun onClick(v: View?) {
+            val animation = anim[v]?.let { AnimationUtils.loadAnimation(context , it) }
+            binding.animViewPosResanimTv.visibility = View.VISIBLE
+            binding.animViewPosResanimTv.startAnimation(animation)
+        }
+    }
 }
