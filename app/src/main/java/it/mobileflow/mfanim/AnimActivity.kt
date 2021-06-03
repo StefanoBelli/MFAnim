@@ -67,7 +67,9 @@ class AnimActivity : AppCompatActivity() {
                         .setPositiveButton(R.string.ok) { actualDialog: DialogInterface, _: Int ->
                             actualDialog.cancel()
                         }
-                        .show()
+                    .show() //Dialog
+                    .getButton(DialogInterface.BUTTON_POSITIVE)
+                    .setTextColor(getColor(R.color.primary))
             }
         }
         return super.onOptionsItemSelected(item)
