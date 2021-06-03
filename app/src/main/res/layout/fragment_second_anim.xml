@@ -20,12 +20,12 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="@dimen/left_right_pad"
-        android:layout_marginTop="24dp"
+        android:layout_marginTop="@dimen/top_title_pad"
         android:text="@string/anim_drawable"
         android:textColor="@color/desc_text_color"
         android:textSize="@dimen/desc_text_size"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.445"
+        app:layout_constraintHorizontal_bias="0.438"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 

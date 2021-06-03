@@ -42,14 +42,15 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="@dimen/left_right_pad"
+        android:layout_marginTop="@dimen/top_title_pad"
         android:text="@string/anim_view_pos_objanim"
         android:textColor="@color/desc_text_color"
         android:textSize="@dimen/desc_text_size"
         app:layout_constraintBottom_toTopOf="@+id/click_me_btn"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.13" />
+        app:layout_constraintVertical_bias="0.015" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

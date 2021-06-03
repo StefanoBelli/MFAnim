@@ -1,14 +1,10 @@
 package it.mobileflow.mfanim.fragment
 
-import android.animation.Animator
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
-import android.view.View.*
 import android.view.ViewGroup
-import android.view.animation.*
 import androidx.fragment.app.Fragment
-
 import it.mobileflow.mfanim.databinding.FragmentFourthAnimBinding
 
 class FourthAnimFragment : Fragment() {
@@ -25,20 +21,19 @@ class FourthAnimFragment : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-        binding.erase.setOnClickListener {
-            if (binding.eraseText.visibility == VISIBLE){
-                binding.loadingSpinner.visibility = VISIBLE
-                binding.eraseText.visibility = INVISIBLE
-                binding.eraseText.animate()
-                    .alpha(0.0f)
-                    .setDuration(1000)
-            }
-           else{
-                binding.loadingSpinner.visibility = INVISIBLE
-                binding.eraseText.visibility = VISIBLE
-                binding.eraseText.animate()
+        binding.toggleVisibilityBtn.setOnClickListener {
+            if (binding.loremIpsumTv.visibility == View.VISIBLE){
+                binding.loadingSpinnerPb.visibility = View.VISIBLE
+                binding.loremIpsumTv.visibility = View.INVISIBLE
+                binding.loremIpsumTv.animate()
+                    .alpha(0f)
+                    .duration = 100
+            } else{
+                binding.loadingSpinnerPb.visibility = View.INVISIBLE
+                binding.loremIpsumTv.visibility = View.VISIBLE
+                binding.loremIpsumTv.animate()
                     .alpha(1.0f)
-                    .setDuration(1000)
+                    .duration = 2000
             }
         }
     }
