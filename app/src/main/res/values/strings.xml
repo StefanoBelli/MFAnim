@@ -18,4 +18,6 @@
     <string name="simone_ottavianelli">Simone Ottavianelli</string>
     <string name="member_mobile_flow">MOBILE FLOW MEMBERS</string>
     <string name="anim_view_pos_objanim">Animate a View using ObjectAnimator</string>
+    <string name="Reveal_or_Hide">Reveal or Hide a View using an animation</string>
+    <string name="lorem_ipsum">Lorem ipsum dolor sit amet</string>
 </resources>
