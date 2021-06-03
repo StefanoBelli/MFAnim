@@ -8,7 +8,6 @@ import com.google.android.material.tabs.TabLayoutMediator
 import it.mobileflow.mfanim.adapter.FragmentAdapter
 import it.mobileflow.mfanim.databinding.ActivityAnimBinding
 
-
 class AnimActivity : AppCompatActivity() {
     private lateinit var binding : ActivityAnimBinding
     private lateinit var titles : Array<String>

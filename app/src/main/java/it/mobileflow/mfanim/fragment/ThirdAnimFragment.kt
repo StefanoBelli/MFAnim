@@ -12,8 +12,11 @@ import it.mobileflow.mfanim.databinding.FragmentThirdAnimBinding
 class ThirdAnimFragment : Fragment() {
     private lateinit var binding : FragmentThirdAnimBinding
 
-    override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?,
-                              savedInstanceState: Bundle?): View {
+    override fun onCreateView(
+            inflater: LayoutInflater,
+            container: ViewGroup?,
+            savedInstanceState: Bundle?
+    ): View {
         binding = FragmentThirdAnimBinding.inflate(layoutInflater, container, false)
         return binding.root
     }
