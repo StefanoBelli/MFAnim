@@ -15,10 +15,6 @@ import it.mobileflow.mfanim.transformer.PopPageTransformer
 import java.util.Date
 
 class AnimActivity : AppCompatActivity() {
-    companion object {
-        private const val PROJECT_SRC_LINK = "https://github.com/StefanoBelli/MFAnim"
-    }
-
     private lateinit var binding : ActivityAnimBinding
     private lateinit var titles : Array<String>
     private lateinit var infoMsg : String
@@ -37,7 +33,7 @@ class AnimActivity : AppCompatActivity() {
         )
 
         infoMsg = "${getString(R.string.basic_info)}\n\n" +
-                " * ${getString(R.string.project_src_link)}: ${PROJECT_SRC_LINK}\n" +
+                " * ${getString(R.string.project_src_link)}: ${getString(R.string.project_url)}\n" +
                 " * ${getString(R.string.build_compiled)}: ${Date(BuildConfig.BUILD_TIMESTAMP)}\n" +
                 " * ${getString(R.string.build_type)}: ${BuildConfig.BUILD_TYPE}"
 

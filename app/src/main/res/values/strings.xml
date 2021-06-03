@@ -31,8 +31,9 @@
     <string name="anim_drawable">Animate a Drawable</string>
     <string name="appinfo">About this app…</string>
     <string name="ok">OK</string>
-    <string name="basic_info">This app was developed by MFAnim team</string>
+    <string name="basic_info">This app was developed by Mobile Flow team</string>
     <string name="build_compiled">Build compiled on</string>
     <string name="build_type">Build type</string>
     <string name="project_src_link">Project source code at</string>
+    <string name="project_url">https://github.com/StefanoBelli/MFAnim</string>
 </resources>
