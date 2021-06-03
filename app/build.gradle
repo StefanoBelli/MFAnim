@@ -8,6 +8,7 @@ android {
     buildToolsVersion "30.0.3"
 
     defaultConfig {
+        buildConfigField "long", "BUILD_TIMESTAMP", System.currentTimeMillis() + "L"
         applicationId "it.mf.mfanim"
         minSdkVersion 28
         targetSdkVersion 30
