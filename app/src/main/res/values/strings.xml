@@ -20,4 +20,23 @@
     <string name="anim_view_pos_objanim">Animate a View using ObjectAnimator</string>
     <string name="Reveal_or_Hide">Reveal or Hide a View using an animation</string>
     <string name="lorem_ipsum">Lorem ipsum dolor sit amet</string>
+=======
+    <string name="slide_down">Slide Down</string>
+    <string name="slide_up">Slide Up</string>
+    <string name="bounce">Bounce</string>
+    <string name="rotate">Rotate</string>
+    <string name="zoom_out">Zoom Out</string>
+    <string name="zoom_in">Zoom In</string>
+    <string name="fade_out">Fade Out</string>
+    <string name="fade_in">Fade In</string>
+    <string name="anim_view_pos_resanim">Animate a View using animation resource</string>
+    <string name="android_logo">Android logo</string>
+    <string name="anim_drawable">Animate a Drawable</string>
+    <string name="appinfo">About this app…</string>
+    <string name="ok">OK</string>
+    <string name="basic_info">This app was developed by Mobile Flow team</string>
+    <string name="build_compiled">Build compiled on</string>
+    <string name="build_type">Build type</string>
+    <string name="project_src_link">Project source code at</string>
+    <string name="project_url">https://github.com/StefanoBelli/MFAnim</string>
 </resources>

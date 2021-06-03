@@ -1,17 +1,117 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout
+<RelativeLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
     <TextView
-        android:id="@+id/textView5"
-        android:layout_width="wrap_content"
+        android:id="@+id/anim_view_pos_resanim_tv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/btns_layout"
+        android:text="@string/anim_view_pos_resanim"
+        android:gravity="center"
+        android:textSize="@dimen/desc_text_size"
+        android:textColor="@color/desc_text_color" />
+
+    <LinearLayout
+        android:id="@+id/btns_layout"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="PLACEHOLDER3"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-</androidx.constraintlayout.widget.ConstraintLayout>
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+            <Button
+                android:id="@+id/fade_in_btn"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/fade_in"
+                style="?android:attr/buttonBarButtonStyle"
+                android:textColor="@color/primary" />
+            <Button
+                android:id="@+id/fade_out_btn"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="@string/fade_out"
+                android:layout_weight="1"
+                style="?android:attr/buttonBarButtonStyle"
+                android:textColor="@color/primary" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="2">
+            <Button
+                android:id="@+id/zoom_in_btn"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="@string/zoom_in"
+                android:layout_weight="1"
+                style="?android:attr/buttonBarButtonStyle"
+                android:textColor="@color/primary" />
+            <Button
+                android:id="@+id/zoom_out_btn"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="@string/zoom_out"
+                android:layout_weight="1"
+                style="?android:attr/buttonBarButtonStyle"
+                android:textColor="@color/primary" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="2">
+            <Button
+                android:id="@+id/slide_down_btn"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="@string/slide_down"
+                android:layout_weight="1"
+                style="?android:attr/buttonBarButtonStyle"
+                android:textColor="@color/primary" />
+            <Button
+                android:id="@+id/slide_up_btn"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="@string/slide_up"
+                android:layout_weight="1"
+                style="?android:attr/buttonBarButtonStyle"
+                android:textColor="@color/primary" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="2">
+            <Button
+                android:id="@+id/bounce_btn"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="@string/bounce"
+                android:layout_weight="1"
+                style="?android:attr/buttonBarButtonStyle"
+                android:textColor="@color/primary" />
+            <Button
+                android:id="@+id/rotate_btn"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="@string/rotate"
+                android:layout_weight="1"
+                style="?android:attr/buttonBarButtonStyle"
+                android:textColor="@color/primary" />
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>
