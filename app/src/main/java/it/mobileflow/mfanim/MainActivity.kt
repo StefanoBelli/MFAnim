@@ -34,11 +34,11 @@ class MainActivity : AppCompatActivity() {
         } else {
             binding = ActivityMainBinding.inflate(layoutInflater)
             setContentView(binding.root)
-            init()
+            initUi()
         }
     }
 
-    private fun init() {
+    private fun initUi() {
         makeDots(0)
         supportActionBar?.hide()
         binding.pager.adapter = SliderAdapter(INTRO_LAYOUTS)
